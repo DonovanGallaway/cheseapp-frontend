@@ -5,7 +5,7 @@ import Show from '../pages/Show'
 
 const Main = (props) => {
     const [cheese, setCheese] = useState(null)
-    const URL = 'https://dg-cheeseapp-backend.herokuapp.com/cheese'
+    const URL = 'https://dg-cheeseapp-backend.herokuapp.com/cheese/'
 
     const getCheese = async () => {
         const response = await fetch(URL)

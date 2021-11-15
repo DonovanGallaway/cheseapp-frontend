@@ -52,18 +52,19 @@ const Show = (props) => {
             />
             <input
             type='text'
-            value={editForm.iamge}
+            value={editForm.image}
             name='image'
             placeholder='image'
             onChange={handleChange}
             />
+            <input type='submit' value='Edit'/>
         </form>
 
         return (
         <div className='cheese'>
         <h1>{thisCheese.name}</h1>
         <h2>{thisCheese.country}</h2>
-        <img src={thisCheese.iamge} alt={thisCheese.name}/>
+        <img src={thisCheese.image} alt={thisCheese.name}/>
         {form}
         <button onClick={removeCheese}>Delete Cheese</button>
         </div>
